@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_bottom_detail_attach"
+    android:layout_marginLeft="@dimen/detail_attachment_horizontal_padding"
+    android:layout_marginRight="@dimen/detail_attachment_horizontal_padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_attachment_image_view_height"
+        app:cardBackgroundColor="?foreground_color"
+        app:cardCornerRadius="@dimen/detail_attachment_corner_radius"
+        app:cardElevation="0.0dip">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/default_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/ic_svg_photo"
+            android:textColor="?iconColorTertiary"
+            android:textSize="96.0sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?itemSelectableBackground" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/icon_error"
+            style="?action_bar_button_svg"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center|right|top"
+            android:text="@string/ic_sync_error"
+            android:textSize="24.0sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?bg_color_attach_edit"
+            android:visibility="gone">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_save"
+                style="?action_bar_button_svg_inverse"
+                android:layout_toLeftOf="@+id/btn_delete"
+                android:text="@string/ic_svg_save" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_delete"
+                style="?action_bar_button_svg_inverse"
+                android:layout_alignParentRight="true"
+                android:text="@string/ic_svg_delete" />
+
+            <TextView
+                android:id="@+id/file_name"
+                style="@style/attachment_other_text_primary"
+                android:layout_above="@+id/file_size"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginLeft="@dimen/window_margin"
+                android:textColor="?android:textColorPrimaryInverse"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/file_size"
+                style="@style/attachment_other_text_secondary"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/window_margin"
+                android:layout_marginLeft="@dimen/window_margin"
+                android:textColor="?android:textColorPrimaryInverse" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_detail_attach" />
+</FrameLayout>

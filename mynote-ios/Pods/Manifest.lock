@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.7.2)
+  - ESPullToRefresh (2.7)
+  - Kingfisher (3.13.1)
+  - Material (2.9.4):
+    - Material/Core (= 2.9.4)
+  - Material/Core (2.9.4)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - ObjectMapper (3.3.0)
+  - Realm (3.7.3):
+    - Realm/Headers (= 3.7.3)
+  - Realm/Headers (3.7.3)
+  - RealmSwift (3.7.3):
+    - Realm (= 3.7.3)
+  - Result (3.2.4)
+  - SlideMenuControllerSwift (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - ESPullToRefresh
+  - Kingfisher (~> 3.0)
+  - Material (= 2.9.4)
+  - Moya
+  - ObjectMapper (~> 3.2)
+  - RealmSwift
+  - SlideMenuControllerSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ESPullToRefresh
+    - Kingfisher
+    - Material
+    - Moya
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+    - Result
+    - SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  Material: 06fa0a5f29c45c42608ae32f3be96f1c46558d13
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  Realm: f366e954e3330d4915a319e96cc04e2ee09a9ef2
+  RealmSwift: 56f111b1dd439973fbe1c066b067ac4702285441
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
+
+PODFILE CHECKSUM: fde9c4edaacda258b4befaf8fd6cd6f0f331ef1a
+
+COCOAPODS: 1.5.3

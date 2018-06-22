@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attachment_file_name_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/info_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:lines="1"
+            style="@style/attachment_other_text_primary" />
+
+        <TextView
+            android:id="@+id/file_size"
+            style="@style/attachment_other_text_secondary"
+            android:text="@string/file_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/detail_attachment_other_view_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/icon_error"
+            style="?action_bar_button_svg"
+            android:layout_width="48.0dip"
+            android:layout_height="match_parent"
+            android:text="@string/ic_sync_error"
+            android:visibility="gone"
+            android:textSize="24.0sp" />
+
+        <LinearLayout
+            android:id="@+id/edit_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_save"
+                style="?action_bar_button_svg_inverse"
+                android:text="@string/ic_svg_save" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_delete"
+                style="?action_bar_button_svg_inverse"
+                android:text="@string/ic_svg_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

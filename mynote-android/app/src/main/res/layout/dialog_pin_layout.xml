@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?activity_bg_primary_color">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_actionbar_transparent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48.0dip"
+            android:gravity="center"
+            android:text="@string/passcode_first_input"
+            android:textColor="?android:textColorPrimaryInverse"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/passcode_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/pin_0"
+                layout="@layout/input_layout_pin" />
+
+            <include
+                android:id="@+id/pin_1"
+                layout="@layout/input_layout_pin" />
+
+            <include
+                android:id="@+id/pin_2"
+                layout="@layout/input_layout_pin" />
+
+            <include
+                android:id="@+id/pin_3"
+                layout="@layout/input_layout_pin" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48.0dip"
+            android:gravity="center"
+            android:textColor="@color/primary_red"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/forget_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48.0dip"
+            android:padding="4.0dip"
+            android:text="@string/forget_password_text"
+            android:textColor="?android:textColorSecondaryInverse"
+            android:textColorLink="?android:textColorSecondaryInverse"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

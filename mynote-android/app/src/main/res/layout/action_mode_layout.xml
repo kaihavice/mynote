@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?actionBarSize">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/option_btns">
+
+        <TextView
+            android:id="@+id/action_mode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="?colorAccent"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/action_mode_share"
+            style="?action_bar_button_svg"
+            android:text="@string/ic_svg_send" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/action_mode_move_to"
+            style="?action_bar_button_svg"
+            android:text="@string/ic_svg_move_to" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/action_mode_delete"
+            style="?action_bar_button_svg"
+            android:text="@string/ic_svg_delete" />
+    </LinearLayout>
+</RelativeLayout>

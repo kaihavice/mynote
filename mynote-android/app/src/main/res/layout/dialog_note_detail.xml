@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="18.0dip"
+    android:paddingRight="@dimen/window_margin"
+    android:paddingTop="8.0dip">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip"
+        android:text="@string/word_number"
+        android:textColor="?android:textColorTertiary"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/word_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12.0dip"
+        android:text="100"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip"
+        android:text="@string/last_modified"
+        android:textColor="?android:textColorTertiary"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/modified"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12.0dip"
+        android:text="1970-1-1"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip"
+        android:text="@string/created"
+        android:textColor="?android:textColorTertiary"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/created"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12.0dip"
+        android:text="1970-1-1"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16.0sp" />
+</LinearLayout>

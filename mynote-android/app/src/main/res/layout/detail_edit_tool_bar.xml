@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?foreground_color"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="32.0dip"
+            android:layout_weight="1.0">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_undo"
+                style="@style/edit_toolbar_btn"
+                android:enabled="false"
+                android:text="@string/ic_svg_backward" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="32.0dip"
+            android:layout_weight="1.0">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_redo"
+                style="@style/edit_toolbar_btn"
+                android:enabled="false"
+                android:text="@string/ic_svg_forward" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="32.0dip"
+            android:layout_weight="1.0">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_paragraph"
+                style="@style/edit_toolbar_btn"
+                android:text="@string/ic_svg_paragraph" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_time"
+                style="@style/edit_toolbar_btn"
+                android:text="@string/ic_svg_time_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_contact"
+                style="@style/edit_toolbar_btn"
+                android:text="@string/ic_svg_contact" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/btn_keyboard_close"
+                style="@style/edit_toolbar_btn"
+                android:text="@string/ic_svg_keyboard_close" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

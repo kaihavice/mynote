@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="107dp"
+    android:baselineAligned="false"
+    android:id="@+id/list_item"
+    android:minHeight="107dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="138dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingLeft="16.0dp">
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/list_not_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/ic_svg_not_selected"
+            android:textColor="?icon_color_selector_unselected"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/list_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/ic_svg_selected"
+            android:textColor="?colorAccent"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/left_layout"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/list_picture_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我去"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/list_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:lineSpacingMultiplier="1.1"
+                android:maxLines="2"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/list_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="12-26"
+                android:textColor="?android:textColorTertiary"
+                android:textSize="10sp" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_reminder"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/ic_svg_reminder" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_radio"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/ic_svg_audio" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_video"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_video" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_file"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_attachment" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/list_picture_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/screen_padding"
+            android:visibility="visible"
+            app:cardElevation="0.0dip">
+
+            <ImageView
+                android:id="@+id/list_picture"
+                android:layout_width="100.0dip"
+                android:layout_height="75.0dip" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/default_picture"
+                android:layout_width="100.0dip"
+                android:layout_height="75.0dip"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@color/black_alpha_10_light"
+                android:gravity="center"
+                android:text="@string/ic_svg_photo"
+                android:textColor="?iconColorTertiary"
+                android:textSize="48.0sp" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider_bottom"
+        style="?g_divider"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16.0dip" />
+</RelativeLayout>

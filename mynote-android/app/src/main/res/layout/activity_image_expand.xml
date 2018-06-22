@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent_light"
+        app:navigationIcon="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+        app:contentInsetEnd="0.0dip"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetRight="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:layout_collapseMode="pin"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/delete_btn"
+                style="?action_bar_button_svg"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/ic_svg_delete"
+                android:textColor="@color/textColorPrimaryInverse_dark" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/rotate_btn"
+                style="?action_bar_button_svg"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/ic_svg_rotate"
+                android:textColor="@color/textColorPrimaryInverse_dark" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/imageViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/black" />
+
+</RelativeLayout>

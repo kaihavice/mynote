@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <com.xuyazhou.mynote.common.widget.WatcherEditText
+        android:id="@+id/note_editor"
+        style="@style/detail_content_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="@string/detail_text_hint"
+        />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_marginLeft="@dimen/detail_layout_padding_left"
+        style="?g_divider"
+        />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:visibility="gone">
+
+    <com.xuyazhou.mynote.common.widget.IconTextView
+        android:id="@+id/play_btn"
+        style="?action_bar_button_svg"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:text="@string/ic_svg_play"
+        android:textColor="?colorAccent"
+        android:textSize="40.0sp" />
+
+    <SeekBar
+        android:id="@+id/play_seekbar"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:maxHeight="4.5999756dip"
+        android:minHeight="4.5999756dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:progressDrawable="?seekbar_progress"
+        android:thumb="?seekbar_thumb" />
+
+    <TextView
+        android:id="@+id/play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip"
+        android:singleLine="true"
+        android:text="00:00"
+        android:textColor="?android:textColorTertiary"
+        android:textSize="12.0sp" />
+</LinearLayout>

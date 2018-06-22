@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?activity_bg_primary_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/logo"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:gravity="center"
+                android:text="@string/ic_svg_app_icon_login"
+                android:textColor="?icon_color_sign_log"
+                android:textSize="80.0sp" />
+
+            <TextView
+                android:id="@+id/domain_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:text="Mynote"
+                android:textColor="?android:textColorSecondaryInverse"
+                android:textSize="14.0sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="0.5">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_sign_up"
+            style="@style/button_inverse_light2"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:text="@string/btn_account_sign_up" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_sign_in"
+            style="@style/button_inverse_light"
+            android:layout_below="@id/btn_sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24.0dip"
+            android:background="@color/white"
+            android:text="@string/sign_in" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_sign_in_google"
+            style="@style/button_inverse_light"
+            android:layout_below="@id/btn_sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24.0dip"
+            android:background="@color/white"
+            android:text="@string/sync_with_gmail" />
+
+
+    </RelativeLayout>
+</LinearLayout>

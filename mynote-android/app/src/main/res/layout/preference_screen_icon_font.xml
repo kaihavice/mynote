@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="72.0dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72.0dip">
+
+        <LinearLayout
+            android:id="@+id/left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="@dimen/window_margin">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/icon_text"
+                android:layout_width="56.0dip"
+                android:layout_height="71.0dip"
+                android:gravity="center"
+                android:textColor="?colorAccent"
+                android:textSize="24.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@android:id/widget_frame"
+            android:layout_toRightOf="@+id/left_layout"
+            android:paddingRight="@dimen/window_margin">
+
+            <TextView
+                android:id="@+android:id/title"
+                style="@style/preference_title_style" />
+
+            <TextView
+                android:id="@+id/summary"
+                style="@style/preference_summary_style"
+                android:layout_alignLeft="@+android:id/title"
+                android:layout_below="@+android:id/title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/widget_frame"
+            android:layout_width="56.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </RelativeLayout>
+</LinearLayout>

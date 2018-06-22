@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/viewType"
+        android:title="@string/viewType"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sync"
+        android:title="@string/sync"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort"
+        android:title="@string/sort"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/list_view_type"
+        android:title="@string/show_title_only"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/lock"
+        android:title="@string/lock_and_exit"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?foreground_color">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_actionbar_inverse" />
+
+
+    <RelativeLayout
+        android:id="@+id/note_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/detail_toolbar_layout"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/collection_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:focusable="true" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/detail_toolbar_layout"
+        layout="@layout/detail_edit_tool_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

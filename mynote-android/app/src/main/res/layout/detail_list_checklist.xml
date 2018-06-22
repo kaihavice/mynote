@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_list_checklist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="@dimen/checklist_item_left_width"
+        android:layout_height="@dimen/checklist_item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <com.xuyazhou.mynote.common.widget.IconTextViewNew
+            android:id="@+id/check_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?actionBarItemBackground"
+            android:gravity="center"
+            android:text="@string/ic_svg_complete_check_off"
+            android:textColor="?iconColorPrimary"
+            android:textSize="24.0sp" />
+    </LinearLayout>
+
+    <com.xuyazhou.mynote.common.widget.WatcherEditText
+        android:id="@+id/edit_text"
+        style="@style/detail_checklist_item_text_style"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/right_layout"
+        android:layout_toRightOf="@+id/left_layout"
+        android:autoLink="all"
+        android:hint="按换行键添加更多"
+        android:imeActionId="101"
+        android:imeActionLabel="Add"
+        android:imeOptions="actionSend"
+        android:inputType="textCapSentences|textImeMultiLine|textMultiLine"
+
+        android:minHeight="@dimen/checklist_item_height" />
+
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/drag_view"
+            style="@style/list_item_icon_svg"
+            android:layout_width="@dimen/checklist_item_right_width"
+            android:layout_height="@dimen/checklist_item_height"
+            android:text="@string/ic_svg_btn_list_drag"
+            android:visibility="gone"
+            android:textColor="?iconColorTertiary"
+            android:textSize="31.0sp" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/delete_btn"
+            style="@style/list_item_icon_svg"
+            android:layout_width="@dimen/checklist_item_right_width"
+            android:layout_height="@dimen/checklist_item_height"
+            android:text="@string/ic_svg_cancel"
+            android:textColor="?iconColorTertiary"
+            android:textSize="24.0sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        style="?g_divider"
+        android:layout_alignLeft="@+id/edit_text"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

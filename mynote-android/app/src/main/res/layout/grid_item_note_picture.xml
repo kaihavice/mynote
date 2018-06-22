@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200.0dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    app:cardBackgroundColor="?foreground_color"
+    app:cardCornerRadius="@dimen/grid_item_corner_radius"
+    app:cardElevation="@dimen/grid_item_elevation"
+    app:corner_radius="@dimen/grid_item_corner_radius">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <com.xuyazhou.mynote.common.widget.IconTextView
+        android:id="@+id/default_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/ic_svg_photo"
+        android:textColor="?iconColorTertiary"
+        android:textSize="96.0sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/grid_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?itemSelectableBackground"
+        android:padding="8.0dip">
+
+        <TextView
+            android:id="@+id/grid_title"
+            tools:text="测试"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/select_layout"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:textColor="@color/black"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/grid_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="?android:textColorPrimaryInverse"
+                android:textSize="10.0sp" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/grid_reminder"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_reminder"
+                android:visibility="gone" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/grid_radio"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_audio"
+                android:visibility="gone" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/grid_video"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_video"
+                android:visibility="gone" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/grid_file"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_attachment"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/select_layout"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/select_bg_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/ic_svg_round_bg"
+                android:textColor="?iconColorPrimaryInverse"
+                android:textSize="23.0sp" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/grid_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/ic_svg_selected"
+                android:textColor="?colorAccent"
+                android:textSize="20.0sp" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/grid_not_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/ic_svg_not_selected"
+                android:textColor="?iconColorPrimaryInverse"
+                android:textSize="20.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

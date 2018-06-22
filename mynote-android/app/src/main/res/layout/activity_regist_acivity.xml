@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?activity_bg_primary_color">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_actionbar_transparent2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="260.0dip"
+        android:layout_below="@id/toolbar"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="288.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="?android:textColorHintInverse"
+                app:hintTextAppearance="@style/InputLayout_TextAppearance"
+                app:theme="?edit_text_style_inverse">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="288.0dip"
+                    android:layout_height="46.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:completionThreshold="1"
+                    android:ems="10"
+                    android:id="@+id/username"
+                    android:gravity="center_vertical"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:textColorHint="?android:textColorHintInverse"
+                    android:textSize="16.0sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                style="?edit_text_style_inverse"
+                android:layout_width="288.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="?android:textColorHintInverse"
+                app:hintTextAppearance="@style/InputLayout_TextAppearance"
+                app:theme="?edit_text_style_inverse">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="288.0dip"
+                    android:layout_height="46.0dip"
+                    android:id="@+id/password"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/ui_password_label"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:textColorHint="?android:textColorHintInverse"
+                    android:textSize="16.0sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_sign_up"
+                style="@style/button_inverse_light2"
+                android:background="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16.0dip"
+                android:layout_marginTop="13.0dip"
+                android:text="@string/btn_account_sign_up" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

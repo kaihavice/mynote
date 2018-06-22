@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="4.0dip"
+    android:layout_marginBottom="20dp"
+    android:paddingTop="8.0dip">
+
+    <TextView
+        android:id="@+id/delete_warning"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/window_margin"
+        android:paddingRight="@dimen/window_margin"
+        android:text="@string/delete_warning"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16.0sp" />
+
+    <CheckBox
+        android:id="@+id/delete_confirm_checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="@dimen/window_margin"
+        android:layout_marginTop="8.0dip"
+        android:text="@string/don_t_show_again"
+        android:textColor="?android:textColorPrimary" />
+</LinearLayout>

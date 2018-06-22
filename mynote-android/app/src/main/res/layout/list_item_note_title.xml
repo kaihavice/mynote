@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="56.0dip"
+    android:baselineAligned="false"
+    android:id="@+id/list_item"
+    android:minHeight="56.0dip"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="56.0dip"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingLeft="16.0dip">
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/list_not_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/ic_svg_not_selected"
+            android:textColor="?icon_color_selector_unselected"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+
+        <com.xuyazhou.mynote.common.widget.IconTextView
+            android:id="@+id/list_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/ic_svg_selected"
+            android:textColor="?colorAccent"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/left_layout"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="8.0dip">
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/list_picture_layout"
+            android:ellipsize="end"
+            android:paddingTop="8.0dip"
+            android:singleLine="true"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="?android:textColorTertiary"
+                android:textSize="10.0sp" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_reminder"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_reminder" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_radio"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_audio" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_video"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/ic_svg_video" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/list_file"
+                style="@style/list_item_small_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ic_svg_attachment" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/list_picture_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/screen_padding"
+            app:cardElevation="0.0dip">
+
+            <ImageView
+                android:id="@+id/list_picture"
+                android:layout_width="64.0dip"
+                android:layout_height="48.0dip" />
+
+            <com.xuyazhou.mynote.common.widget.IconTextView
+                android:id="@+id/default_picture"
+                android:layout_width="64.0dip"
+                android:layout_height="48.0dip"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@color/black_alpha_10_light"
+                android:gravity="center"
+                android:text="@string/ic_svg_photo"
+                android:textColor="?iconColorTertiary"
+                android:textSize="48.0sp" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider_bottom"
+        style="?g_divider"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16.0dip" />
+</RelativeLayout>

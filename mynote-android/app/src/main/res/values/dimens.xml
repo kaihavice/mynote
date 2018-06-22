@@ -1,0 +1,134 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="abc_alert_dialog_button_bar_height">48.0dip</dimen>
+    <dimen name="custom_option_width">140.0dip</dimen>
+    <dimen name="divider_1">1.0px</dimen>
+    <dimen name="grid_vertical_space">8.0dip</dimen>
+
+
+    <dimen name="abc_search_view_text_min_width">160.0dip</dimen>
+    <dimen name="gridview_wide_width">158.0dip</dimen>
+    <dimen name="nav_view_width">-1.0px</dimen>
+
+    <dimen name="list_item_height">48.0dip</dimen>
+    <dimen name="normal_height">48.0dip</dimen>
+    <dimen name="widget_min_size_cell_1">72.0dip</dimen>
+    <dimen name="widget_min_size_cell_2">146.0dip</dimen>
+    <dimen name="widget_min_size_cell_3">220.0dip</dimen>
+    <dimen name="widget_min_size_cell_4">294.0dip</dimen>
+
+    <dimen name="abc_dialog_list_padding_vertical_material">8.0dip</dimen>
+
+    <dimen name="ampm_label_size">16.0sp</dimen>
+    <dimen name="ampm_left_padding">6.0dip</dimen>
+    <dimen name="attach_option_item_external_margin">18.0dip</dimen>
+    <dimen name="ca_calendar_title">67.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">2.0dip</dimen>
+    <dimen name="cardview_default_radius">2.0dip</dimen>
+    <dimen name="checklist_header_min_height">48.0dip</dimen>
+    <dimen name="checklist_item_height">48.0dip</dimen>
+    <dimen name="checklist_item_left_width">56.0dip</dimen>
+    <dimen name="checklist_item_padding_bottom">12.0dip</dimen>
+    <dimen name="checklist_item_padding_right">16.0dip</dimen>
+    <dimen name="checklist_item_padding_top">12.0dip</dimen>
+    <dimen name="checklist_item_right_width">48.0dip</dimen>
+    <dimen name="contact_bg_corner">1.0dip</dimen>
+    <dimen name="design_appbar_elevation">4.0dip</dimen>
+    <dimen name="design_bottom_sheet_modal_elevation">16.0dip</dimen>
+    <dimen name="design_bottom_sheet_modal_peek_height">256.0dip</dimen>
+    <dimen name="design_fab_border_width">0.5dip</dimen>
+    <dimen name="design_fab_elevation">6.0dip</dimen>
+    <dimen name="design_fab_image_size">24.0dip</dimen>
+    <dimen name="design_fab_size_mini">40.0dip</dimen>
+    <dimen name="design_fab_size_normal">56.0dip</dimen>
+    <dimen name="design_fab_translation_z_pressed">6.0dip</dimen>
+    <dimen name="design_navigation_elevation">16.0dip</dimen>
+    <dimen name="design_navigation_icon_padding">32.0dip</dimen>
+    <dimen name="design_navigation_icon_size">24.0dip</dimen>
+    <dimen name="design_navigation_padding_bottom">8.0dip</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">8.0dip</dimen>
+    <dimen name="design_snackbar_elevation">6.0dip</dimen>
+    <dimen name="design_snackbar_padding_horizontal">12.0dip</dimen>
+    <dimen name="design_snackbar_padding_vertical">14.0dip</dimen>
+    <dimen name="design_snackbar_text_size">14.0sp</dimen>
+    <dimen name="design_tab_max_width">264.0dip</dimen>
+    <dimen name="design_tab_text_size">14.0sp</dimen>
+    <dimen name="design_tab_text_size_2line">12.0sp</dimen>
+    <dimen name="detail_attach_bottom_margin">4.0dip</dimen>
+    <dimen name="detail_attachment_ads_view_height">82.0dip</dimen>
+    <dimen name="detail_attachment_horizontal_padding">16.0dip</dimen>
+    <dimen name="detail_attachment_image_view_height">196.0dip</dimen>
+    <dimen name="detail_attachment_other_view_height">56.0dip</dimen>
+    <dimen name="detail_layout_padding_bottom">10.0dip</dimen>
+    <dimen name="detail_layout_padding_left">16.0dip</dimen>
+    <dimen name="detail_layout_padding_right">16.0dip</dimen>
+    <dimen name="detail_layout_padding_top">10.0dip</dimen>
+    <dimen name="detail_margin">9.0dip</dimen>
+    <dimen name="detail_text_view_min_height">80.0dip</dimen>
+    <dimen name="detailpulldownbar_height">38.0dip</dimen>
+    <item type="dimen" name="disabled_alpha_material_dark">0.3</item>
+    <item type="dimen" name="disabled_alpha_material_light">0.26</item>
+    <dimen name="divider_preference">1.0px</dimen>
+    <dimen name="extra_time_label_margin">-30.0dip</dimen>
+    <dimen name="fab_size_mini">40.0dip</dimen>
+    <dimen name="fab_size_normal">56.0dip</dimen>
+    <dimen name="fastscroll_thumb_height">66.0dip</dimen>
+    <dimen name="fastscroll_thumb_width">34.0dip</dimen>
+    <dimen name="gap_min_height">32.0dip</dimen>
+    <dimen name="gesture_inset">3.0dip</dimen>
+    <dimen name="gesture_small_word_size">18.0dip</dimen>
+    <dimen name="gesture_small_word_size_bounds">100.0dip</dimen>
+    <dimen name="gesture_word_size">50.0dip</dimen>
+    <dimen name="grid_item_elevation">1.0dip</dimen>
+    <dimen name="grid_space">8.0dip</dimen>
+    <dimen name="gridview_wide_height">176.0dip</dimen>
+    <dimen name="header_height">88.0dip</dimen>
+    <item type="dimen" name="highlight_alpha_material_colored">0.26</item>
+    <item type="dimen" name="highlight_alpha_material_dark">0.2</item>
+    <item type="dimen" name="highlight_alpha_material_light">0.12</item>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20.0dip</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800.0dip</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120.0dip</dimen>
+    <dimen name="labels_text_size">14.0sp</dimen>
+    <dimen name="list_note_picture_layout_width">100.0dip</dimen>
+    <dimen name="list_note_selection_layout_width">56.0dip</dimen>
+    <dimen name="lock_pattern_circle_size">20.0dip</dimen>
+    <dimen name="margin_bottom_detail_attach">8.0dip</dimen>
+    <dimen name="material_normal_padding">16.0dip</dimen>
+    <dimen name="note_size_primary_detail">16.0sp</dimen>
+    <dimen name="notification_large_icon_height">64.0dip</dimen>
+    <dimen name="notification_large_icon_width">64.0dip</dimen>
+    <dimen name="notification_subtext_size">12.0dip</dimen>
+    <dimen name="option_dropdown_item_height">48.0dip</dimen>
+    <dimen name="option_item_horizontal_margin">19.0dip</dimen>
+    <dimen name="option_item_icon_size">24.0dip</dimen>
+    <dimen name="option_item_text_size">15.0sp</dimen>
+    <dimen name="pay_btn_text_size">22.0sp</dimen>
+    <dimen name="pay_header_max_height">234.0dip</dimen>
+    <dimen name="pay_header_min_height">178.0dip</dimen>
+    <dimen name="pay_view_margin_top">122.0dip</dimen>
+    <dimen name="picker_dimen">270.0dip</dimen>
+    <dimen name="popup_margin">4.0dip</dimen>
+    <dimen name="rv_padding_right">16.0dip</dimen>
+    <dimen name="screen_padding">8.0dip</dimen>
+    <dimen name="separator_padding">4.0dip</dimen>
+    <dimen name="text_size_12">12.0sp</dimen>
+    <dimen name="time_label_size">60.0sp</dimen>
+    <dimen name="widget_bg_corner_radius">2.0dip</dimen>
+    <dimen name="widget_config_title_height">56.0dip</dimen>
+    <dimen name="widget_header_height">48.0dip</dimen>
+    <dimen name="widget_single_note_margin">5.0dip</dimen>
+    <dimen name="widget_single_note_title_height">25.0dip</dimen>
+    <dimen name="window_margin">16.0dip</dimen>
+
+    <dimen name="detail_attachment_corner_radius">2.0dip</dimen>
+    <dimen name="grid_item_corner_radius">2.0dip</dimen>
+</resources>

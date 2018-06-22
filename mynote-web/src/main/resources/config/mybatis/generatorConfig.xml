@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+    <!-- !!!! Driver Class Path !!!! -->
+    <classPathEntry location="${jarDirection}"/>
+
+    <context id="context" targetRuntime="MyBatis3">
+
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <!--<plugin type="com.saferich.plugin.ModelExampleLimitPlugin"/>-->
+        <!--<plugin type="com.saferich.plugin.ModelJavaDocPlugin"/>-->
+
+        <commentGenerator>
+            <property name="suppressAllComments" value="false"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+        <!-- !!!! Database Configurations !!!! -->
+        <jdbcConnection driverClass="${driverClass}" connectionURL="${connectionURL}" userId="${userId}"
+                        password="${password}"/>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+
+        <!-- !!!! Model Configurations !!!! -->
+        <javaModelGenerator targetPackage="${modelPackage}" targetProject="${src_main_java}">
+            <property name="enableSubPackages" value="false"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- !!!! Mapper XML Configurations !!!! -->
+        <sqlMapGenerator targetPackage="${sqlMapperPackage}" targetProject="${src_main_resources}">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+        <!-- !!!! Mapper Interface Configurations !!!! -->
+        <javaClientGenerator targetPackage="${mapperPackage}" targetProject="${src_main_java}" type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <!-- !!!! Table Configurations !!!! -->
+        <!--<table tableName="gr_member_token" schema="mynote"-->
+        <!--domainObjectName="MemberToken">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+
+        <!--</table>-->
+        <table tableName="attachment" schema="mynote"
+        domainObjectName="Attachment">
+        <property name="useActualColumnNames" value="false"/>
+
+        </table>
+        <!--<table tableName="note" schema="mynote"-->
+               <!--domainObjectName="Note">-->
+            <!--<property name="useActualColumnNames" value="false"/>-->
+
+        <!--</table>-->
+        <!--<table tableName="user" schema="mynote"-->
+               <!--domainObjectName="User">-->
+            <!--<property name="useActualColumnNames" value="false"/>-->
+
+        <!--</table>-->
+        <!--<table tableName="folder" schema="mynote"-->
+               <!--domainObjectName="Folder">-->
+            <!--<property name="useActualColumnNames" value="false"/>-->
+
+        <!--</table>-->
+        <!--<table tableName="attachment" schema="mynote"-->
+
+               <!--domainObjectName="Attachment">-->
+            <!--<property name="useActualColumnNames" value="false"/>-->
+
+        <!--</table>-->
+        <table tableName="checklistItem" schema="mynote"
+
+               domainObjectName="CheckListItem">
+            <property name="useActualColumnNames" value="false"/>
+
+        </table>
+
+    </context>
+</generatorConfiguration>

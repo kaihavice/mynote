@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_actionbar_inverse" />
+
+    <TextView
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#f1f2f2"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="18dp"
+        android:textColor="#76817e" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/btn_save"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.0dip"
+        android:fadingEdge="none" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_save"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary_light"
+       android:text="确定"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_height="50dp" />
+
+    <include
+        android:id="@+id/toolbar_shadow"
+        layout="@layout/toolbar_shadow" />
+
+</RelativeLayout>

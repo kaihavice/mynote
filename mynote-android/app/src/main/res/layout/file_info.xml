@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8.0dip"
+    android:paddingLeft="?dialogPreferredPadding"
+    android:paddingRight="?dialogPreferredPadding"
+    android:paddingTop="@dimen/abc_dialog_padding_top_material">
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/file_name"-->
+        <!--android:textColor="?textColorAccentPrimary" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/file_name"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/size"-->
+        <!--android:textColor="?textColorAccentPrimary" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/file_size"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/file_lastmodified"-->
+        <!--android:textColor="?textColorAccentPrimary" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/file_lastmodified"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/file_contents_title"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/file_contents"-->
+        <!--android:textColor="?textColorAccentPrimary" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/file_contents"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="" />-->
+</LinearLayout>

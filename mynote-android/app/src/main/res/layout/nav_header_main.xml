@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:background="@color/colorAccent_light"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@mipmap/default_photo_light" />
+
+
+    <TextView
+        android:id="@+id/account_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/photo"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="8.0dip"
+        android:text="xuyazhou18@gmail.com"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:textSize="14.0sp" />
+
+
+</RelativeLayout>

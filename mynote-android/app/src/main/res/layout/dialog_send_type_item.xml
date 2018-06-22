@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip">
+
+    <com.xuyazhou.mynote.common.widget.IconTextView
+        android:id="@+id/icon"
+        style="@style/dialog_left_item_style"
+        android:gravity="center"
+        android:textColor="?iconColorPrimary"
+        android:textSize="24.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/dialog_text_style"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</RelativeLayout>

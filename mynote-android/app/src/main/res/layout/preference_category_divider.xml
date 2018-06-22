@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <ImageView android:id="@id/divider" android:layout_height="@dimen/divider_preference" style="?g_divider" />
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/window_margin" android:layout_marginRight="@dimen/window_margin" android:singleLine="true" android:layout_marginStart="@dimen/window_margin" android:layout_marginEnd="@dimen/window_margin" />
+</LinearLayout>
