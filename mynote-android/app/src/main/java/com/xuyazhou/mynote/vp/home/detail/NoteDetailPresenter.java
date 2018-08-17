@@ -447,4 +447,17 @@ public class NoteDetailPresenter extends BasePresenter<NoteDetailContract.View>
     public UserSetting getUserseting() {
         return dataManager.getUserSetting();
     }
+
+    public void updateNoteStatus() {
+        long currentTime = System.currentTimeMillis() / 1000;
+
+        if (deatils.getNote().getStatus() == SyncStatus.LocalNew) {
+            deatils.getNote().setStatus(SyncStatus.LocalNew);
+        } else {
+            deatils.getNote().setStatus(SyncStatus.LocalUpdate);
+        }
+        deatils.getNote().setModifiedTime(currentTime);
+        deatils.getNote().update();
+
+    }
 }

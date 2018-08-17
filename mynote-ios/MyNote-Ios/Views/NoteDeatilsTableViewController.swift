@@ -39,12 +39,28 @@ class NoteDeatilsTableViewController: UITableViewController, UITextViewDelegate,
 
     @IBAction func didToggleCheckBoxButton(_ sender: CheckboxButton) {
         // let state = sender.on ? true : false
+       
 
         try! realm.safeWrite {
-            let check = checkList![sender.tag - 1]
-
-            check.checked = sender.on
-
+        let check = checkList![sender.tag - 1]
+                    if sender.on{
+                        check.checked = true
+                        print("check----> true")
+                    }else{
+                        check.checked = false
+                        print("check----> false")
+                    }
+            if check.status == SyncStatus.HasSync {
+                check.status = SyncStatus.LocalUpdate
+                
+            }
+            if note.status == SyncStatus.HasSync {
+                note.status = SyncStatus.LocalUpdate
+                
+            }
+            userSetting.isHaveNew = true
+            check.modifiedTime = self.getNowDataInt()
+               note.modifiedTime = self.getNowDataInt()
         }
 
         // print("CheckboxButton:  \(sender.tag) did turn \(state)")
@@ -164,6 +180,11 @@ class NoteDeatilsTableViewController: UITableViewController, UITextViewDelegate,
         } else {
             try! realm.safeWrite {
                 let check = checkList![textView.tag - 1]
+                
+                if note.status == SyncStatus.HasSync {
+                    note.status = SyncStatus.LocalUpdate
+                    
+                }
                 if check.status == SyncStatus.HasSync {
                     check.status = SyncStatus.LocalUpdate
                     
@@ -172,6 +193,8 @@ class NoteDeatilsTableViewController: UITableViewController, UITextViewDelegate,
                 check.modifiedTime = self.getNowDataInt()
                 note.modifiedTime = self.getNowDataInt()
                 check.title = textView.text!
+                
+                print("current check--->\(check.status)")
 
             }
         }
@@ -412,7 +435,7 @@ class NoteDeatilsTableViewController: UITableViewController, UITextViewDelegate,
         let currentTime = self.getNowDataInt()
         photo.createTime = currentTime
         photo.modifiedTime = currentTime
-
+photo.fileType = Constant.PHOTO
         photo.status = SyncStatus.LocalNew
         photo.deleted = false
 

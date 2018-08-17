@@ -488,6 +488,7 @@ public class NoteDetailActivity extends BaseActivity<NoteDetailPresenter> implem
     public void changeCheckToBottom(int position) {
 
         adapter.changeCheckToBottom(position, presenter.moveCheck());
+        presenter.updateNoteStatus();
     }
 
     @Override

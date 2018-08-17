@@ -19,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.jakewharton.rxbinding2.view.RxView;
 import com.xuyazhou.mynote.R;
+import com.xuyazhou.mynote.common.config.SyncStatus;
 import com.xuyazhou.mynote.common.utils.EditUtlis;
 import com.xuyazhou.mynote.common.utils.FileSizeUtils;
 import com.xuyazhou.mynote.common.widget.IconTextView;
@@ -485,6 +486,9 @@ public class NoteDeatilsListAdapter extends RecyclerView.Adapter<RecyclerView.Vi
                             checkIcon.setAlpha(1.0F);
                             checkListItem.setChecked(false);
                             checkListItem.setModifiedTime(currentTime);
+                            if (checkListItem.getStatus() == SyncStatus.HasSync) {
+                                checkListItem.setStatus(SyncStatus.LocalUpdate);
+                            }
                             checkListItem.update();
                             checkListItemClickListener.changeCheckToUp(position);
 
@@ -494,6 +498,9 @@ public class NoteDeatilsListAdapter extends RecyclerView.Adapter<RecyclerView.Vi
                             checkIcon.setAlpha(0.5F);
                             checkListItem.setChecked(true);
                             checkListItem.setModifiedTime(currentTime);
+                            if (checkListItem.getStatus() == SyncStatus.HasSync) {
+                                checkListItem.setStatus(SyncStatus.LocalUpdate);
+                            }
                             checkListItem.update();
                             checkListItemClickListener.changeCheckToBottom(position);
 
